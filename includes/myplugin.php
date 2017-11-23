@@ -20,7 +20,7 @@ class myplugin
     }
 }
 myplugin::getInstance();
-}
+
 
 static public function activation()
     {
@@ -31,7 +31,7 @@ static public function activation()
     static public function deactivation()
     {
         // debug.log
-        error_log('plugin '.STEPBYSTEP_PlUGIN_NAME.' deactivation');
+        error_log('plugin '.myplugin.' deactivation');
     }
 }
 StepByStepPlugin::getInstance();
