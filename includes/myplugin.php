@@ -3,11 +3,12 @@
 
 
 namespace includes;
-
+use includes\common\MyLoader;
 class myplugin
 {
     private static $instance = null;
     private function __construct() {
+		MyLoader::getInstance();
     }
     public static function getInstance() {
 
@@ -18,8 +19,8 @@ class myplugin
         return self::$instance;
 
     }
-}
-myplugin::getInstance();
+
+
 
 
 static public function activation()
@@ -34,4 +35,4 @@ static public function activation()
         error_log('plugin '.myplugin.' deactivation');
     }
 }
-StepByStepPlugin::getInstance();
+MyPlugin::getInstance();
