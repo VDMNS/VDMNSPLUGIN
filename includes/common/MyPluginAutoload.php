@@ -25,4 +25,4 @@ class MyPluginAutoload
         }
     }
 }
-StepByStepAutoload::getInstance();
+MyPluginAutoload::getInstance();
