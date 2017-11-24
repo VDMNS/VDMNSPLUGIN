@@ -6,8 +6,8 @@
  * Time: 
  */
 namespace includes\common;
-use includes\example\MyExampleAction;
-use includes\example\MyStepExampleFilter;
+use includes\example\VdmnsExampleAction;
+use includes\example\VdmnsStepExampleFilter;
 class VdmnsLoader
 {
     private static $instance = null;
@@ -44,13 +44,13 @@ class VdmnsLoader
      * Метод будет срабатывать везде. Загрузка классов для Админ панеле и Сайта
      */
     public function all(){
-       MyLocalization::getInstance();
-        $MyExampleAction = MyExampleAction::newInstance();
-        $MyExampleFilter = StepByStepExampleFilter::newInstance();
-       $myExampleFilter->callMyFilter("Roman");
-       $myExampleFilter->callMyFilterAdditionalParameter("Roman", "Softgroup", "Poltava");
-       $myExampleAction = StepByStepExampleAction::newInstance();
-       $myExampleAction->callMyAction();
-       $myExampleAction->callMyActionAdditionalParameter( 'test1', 'test2', 'test3' );*/
+       VdmnsLocalization::getInstance();
+        //$MyExampleAction = MyExampleAction::newInstance();
+        $vdmnsExampleFilter = VdmnsExampleFilter::newInstance();
+       $vdmnsExampleFilter->callMyFilter("Roman");
+       $vdmnsExampleFilter->callMyFilterAdditionalParameter("Roman", "Softgroup", "Poltava");
+      $vdmnsExampleAction = VdmnsExampleAction::newInstance();
+       $vdmnsExampleAction->callMyAction();
+       $vdmnsExampleAction->callMyActionAdditionalParameter( 'test1', 'test2', 'test3' );*/
     }
 }
