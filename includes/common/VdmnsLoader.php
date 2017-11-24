@@ -6,8 +6,11 @@
  * Time: 
  */
 namespace includes\common;
+
+use includes\controllers\admin\menu\VdmnsMainAdminMenuController;
 use includes\example\VdmnsExampleAction;
 use includes\example\VdmnsStepExampleFilter;
+
 class VdmnsLoader
 {
     private static $instance = null;
@@ -34,6 +37,7 @@ class VdmnsLoader
      * Метод будет срабатывать когда вы находитесь в Админ панеле. Загрузка классов для Админ панели
      */
     public function admin(){
+		VdmnsMainAdminMenuController::newInstance();
     }
     /**
      * Метод будет срабатывать когда вы находитесь Сайте. Загрузка классов для Сайта
