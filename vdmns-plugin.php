@@ -6,8 +6,8 @@ Description: my.
 Version: 1.0
 Author: vadimmanzhos
 Author URI: 
-Text Domain: 
-Domain Path: 
+Text Domain: vdmns-plugin
+Domain Path: /languages/
 */
 require_once plugin_dir_path(__FILE__) . '/config-path.php';
 require_once VDMNS_PlUGIN_DIR.'/includes/common/VdmnsAutoload.php';
