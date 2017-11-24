@@ -2,7 +2,7 @@
 namespace includes\controllers\admin\menu;
 
 
-abstract class StepByStepBaseAdminMenuController
+abstract class VdmnsAdminMenuController
 {
     public function __construct(){
         /*
