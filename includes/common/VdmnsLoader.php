@@ -8,6 +8,17 @@
 namespace includes\common;
 
 use includes\controllers\admin\menu\VdmnsMainAdminMenuController;
+use includes\controllers\admin\menu\VdmnsMainAdminSubMenuController;
+use includes\controllers\admin\menu\VdmnsMyCommentsMenuController;
+use includes\controllers\admin\menu\VdmnsMyDashboardMenuController;
+use includes\controllers\admin\menu\VdmnsMyMediaMenuController;
+use includes\controllers\admin\menu\VdmnsMyOptionsMenuController;
+use includes\controllers\admin\menu\VdmnsMyPagesMenuController;
+use includes\controllers\admin\menu\VdmnsMyPluginsMenuController;
+use includes\controllers\admin\menu\VdmnsMyPostsMenuController;
+use includes\controllers\admin\menu\VdmnsMyThemeMenuController;
+use includes\controllers\admin\menu\VdmnsMyToolsMenuController;
+use includes\controllers\admin\menu\VdmnsMyUsersMenuController;
 use includes\example\VdmnsExampleAction;
 use includes\example\VdmnsStepExampleFilter;
 
@@ -38,6 +49,17 @@ class VdmnsLoader
      */
     public function admin(){
 		VdmnsMainAdminMenuController::newInstance();
+		VdmnsMainAdminSubMenuController::newInstance();
+        VdmnsMyDashboardMenuController::newInstance();
+        VdmnsMyPostsMenuController::newInstance();
+        VdmnsMyMediaMenuController::newInstance();
+        VdmnsMyPagesMenuController::newInstance();
+        VdmnsMyCommentsMenuController::newInstance();
+        VdmnsMyThemeMenuController::newInstance();
+        VdmnsMyPluginsMenuController::newInstance();
+        VdmnsMyUsersMenuController::newInstance();
+        VdmnsMyToolsMenuController::newInstance();
+        VdmnsMyOptionsMenuController::newInstance();
     }
     /**
      * Метод будет срабатывать когда вы находитесь Сайте. Загрузка классов для Сайта
