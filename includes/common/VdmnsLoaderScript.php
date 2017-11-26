@@ -62,8 +62,21 @@ class VdmnsLoaderScript
         wp_enqueue_style(VDMNS_PlUGIN_SLUG.'-AdminMain');
     }
 
+	
+    public function loadHeadScriptAdmin(){
+		public function loadHeadScriptAdmin(){
+        ?>
+            <script type="text/javascript">
+                var stepByStepAjaxUrl;
+                vdmnsAjaxUrl  = '<?php echo VDMNS_PlUGIN_AJAX_URL; ?>';
+            </script>
+        <?php
+    }
+
+
+
+
 	}
-    public function loadHeadScriptAdmin(){}
     public function loadScriptSite($hook){}
     public function loadHeadScriptSite(){}
     public function loadFooterScriptSite(){}
