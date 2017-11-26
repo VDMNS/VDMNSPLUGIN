@@ -2,7 +2,7 @@
 namespace includes\controllers\admin\menu;
 
 
-abstract class VdmnsBaseAdminMenuController implements VdmnsСreatorInstance
+abstract class VdmnsBaseAdminMenuController implements VdmnsIСreatorInstance
 {
     public function __construct(){
         /*
