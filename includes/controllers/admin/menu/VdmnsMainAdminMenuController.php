@@ -2,7 +2,7 @@
 namespace includes\controllers\admin\menu;
 
 
-class VdmnsAdminMenuController extends VdmnsBaseAdminMenuController
+class VdmnsMainAdminMenuController extends VdmnsBaseAdminMenuController
 {
 
     public function action()
