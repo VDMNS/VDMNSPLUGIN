@@ -71,6 +71,8 @@ class VdmnsLoader
      */
     public function all(){
        VdmnsLocalization::getInstance();
+	   VdmnsLoaderScript::getInstance();
+
         //$MyExampleAction = MyExampleAction::newInstance();
         $vdmnsExampleFilter = VdmnsExampleFilter::newInstance();
        $vdmnsExampleFilter->callMyFilter("Roman");
@@ -78,5 +80,6 @@ class VdmnsLoader
       $vdmnsExampleAction = VdmnsExampleAction::newInstance();
        $vdmnsExampleAction->callMyAction();
        $vdmnsExampleAction->callMyActionAdditionalParameter( 'test1', 'test2', 'test3' );*/
+	   
     }
 }
