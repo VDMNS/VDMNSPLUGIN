@@ -73,7 +73,7 @@ class VdmnsLoader
        VdmnsLocalization::getInstance();
 	   VdmnsLoaderScript::getInstance();
 
-        //$MyExampleAction = MyExampleAction::newInstance();
+        /*$MyExampleAction = MyExampleAction::newInstance();
         $vdmnsExampleFilter = VdmnsExampleFilter::newInstance();
        $vdmnsExampleFilter->callMyFilter("Roman");
        $vdmnsExampleFilter->callMyFilterAdditionalParameter("Roman", "Softgroup", "Poltava");
