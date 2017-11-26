@@ -49,17 +49,7 @@ class VdmnsLoader
      */
     public function admin(){
 		VdmnsMainAdminMenuController::newInstance();
-		VdmnsMainAdminSubMenuController::newInstance();
-        VdmnsMyDashboardMenuController::newInstance();
-        VdmnsMyPostsMenuController::newInstance();
-        VdmnsMyMediaMenuController::newInstance();
-        VdmnsMyPagesMenuController::newInstance();
-        VdmnsMyCommentsMenuController::newInstance();
-        VdmnsMyThemeMenuController::newInstance();
-        VdmnsMyPluginsMenuController::newInstance();
-        VdmnsMyUsersMenuController::newInstance();
-        VdmnsMyToolsMenuController::newInstance();
-        VdmnsMyOptionsMenuController::newInstance();
+		
     }
     /**
      * Метод будет срабатывать когда вы находитесь Сайте. Загрузка классов для Сайта
