@@ -14,5 +14,5 @@ abstract class VdmnsBaseAdminMenuController implements VdmnsIСreatorInstance
 
     abstract public function action();
     abstract public function render();
-    abstract public static function newInstance();
+    
 }
