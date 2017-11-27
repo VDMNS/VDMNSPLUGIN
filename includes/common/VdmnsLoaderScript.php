@@ -76,7 +76,7 @@ class VdmnsLoaderScript
 
 
 
-	}
+	
     public function loadScriptSite($hook){}
     public function loadHeadScriptSite(){}
     public function loadFooterScriptSite(){}
