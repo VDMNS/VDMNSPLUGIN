@@ -3,7 +3,7 @@
 namespace includes\controllers\admin\menu;
 
 
-class VdmnsMyCommentsMenuController extends VdmnsStepByStepBaseAdminMenuController
+class VdmnsMyCommentsMenuController extends VdmnsBaseAdminMenuController
 {
     public function action()
     {
