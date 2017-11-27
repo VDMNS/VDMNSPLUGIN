@@ -1,8 +1,8 @@
 <?php
 
-
-
-namespace includes\common;
+  namespace includes\common;
+  
+  
 class VdmnsLoaderScript
 {
     private static $instance = null;
@@ -64,7 +64,7 @@ class VdmnsLoaderScript
 
 	
     public function loadHeadScriptAdmin(){
-		public function loadHeadScriptAdmin(){
+		
         ?>
             <script type="text/javascript">
                 var stepByStepAjaxUrl;
