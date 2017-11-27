@@ -1,12 +1,14 @@
 <?php
 namespace includes;
 
+use includes\common\VdmnsLoader;
+
 class VdmnsPlugin
 {
 	  private static $instance = null;
 
      private function __construct()  {
-
+        VdmnsLoader::getInstance();
     }
 	  public static function getInstance() {
          if ( null == self::$instance ) {
