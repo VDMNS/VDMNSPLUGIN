@@ -14,7 +14,7 @@ class VdmnsMainAdminMenuController extends VdmnsBaseAdminMenuController
          */
         $pluginPage = add_menu_page(
             _x(
-                'Vdmns plugin'
+                'Vdmns plugin',
                 'admin menu page' ,
                 VDMNS_PlUGIN_TEXTDOMAIN
             ),
