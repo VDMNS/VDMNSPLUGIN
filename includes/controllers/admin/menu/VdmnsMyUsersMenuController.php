@@ -2,7 +2,7 @@
 <?php
 
 
-namespace includes\controllers\admin\menu;
+  namespace includes\controllers\admin\menu;
 
 
 class VdmnsMyUsersMenuController extends VdmnsBaseAdminMenuController
