@@ -3,7 +3,7 @@
 namespace includes\controllers\admin\menu;
 
 
-class VdmnsPluginsMenuController extends VdmnsBaseAdminMenuController
+class VdmnsMyPluginsMenuController extends VdmnsBaseAdminMenuController
 {
     public function action()
     {
