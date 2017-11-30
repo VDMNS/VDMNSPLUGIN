@@ -37,6 +37,9 @@ class VdmnsMainAdminMenuController extends VdmnsBaseAdminMenuController
     {
         // TODO: Implement render() method.
 	_e("Hello world", VDMNS_PlUGIN_TEXTDOMAIN);
+	$reuestAPI = VdmnsRequestApi::getInstance();
+    var_dump($reuestAPI->getCalendarPricesMonth('RUB', 'MOW', 'LED'));
+
     }
 
     public static function newInstance()
