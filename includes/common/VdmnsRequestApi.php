@@ -5,8 +5,8 @@ namespace includes\common;
 class VdmnsRequestApi
 {
     const VDMNS_API_V2 = "http://api.travelpayouts.com/v2";
-    const VDMNS_TOKEN = "b2f8bef81735323aecb33e285da8e694";
-    const VDMNS_MARKER = "17942";
+    const VDMNS_TOKEN = "12588db7ad3eedc410eb392b3a61bfde";
+    const VDMNS_MARKER = "157019";
     private static $instance = null;
 
     private function __construct(){
