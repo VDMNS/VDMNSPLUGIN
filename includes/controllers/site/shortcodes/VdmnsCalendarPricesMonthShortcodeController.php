@@ -6,10 +6,16 @@ namespace includes\controllers\site\shortcodes;
 
 use includes\common\VdmnsRequestApi;
 use includes\controllers\admin\menu\VdmnsIСreatorInstance;
+use includes\models\site\VdmnsCalendarPricesMonthShortcodeModel;
 
 class VdmnsCalendarPricesMonthShortcodeController extends VdmnsShortcodesController
     implements VdmnsIСreatorInstance
 {
+ public $model;
+    public function __construct() {
+        parent::__construct();
+        $this->model = VdmnsCalendarPricesMonthShortcodeModel::newInstance();
+    }
 
     /**
      * Функция в которой будем добалять шорткоды через функцию add_shortcode( $tag , $func );
@@ -57,8 +63,10 @@ class VdmnsCalendarPricesMonthShortcodeController extends VdmnsShortcodesControl
             'destination' => '',
             'month' => date('Y-m-d'),
         ), $atts, $tag );
-        $reuestAPI = VdmnsRequestApi::getInstance();
+        /*$reuestAPI = VdmnsRequestApi::getInstance();
         $data = $reuestAPI->getCalendarPricesMonth($atts['currency'], $atts['origin'],
+            $atts['destination'], $atts['month']);*/
+			$data = $this->model->getData($atts['currency'], $atts['origin'],
             $atts['destination'], $atts['month']);
         if ($data == false) return false;
         return $this->render($data);
@@ -72,7 +80,8 @@ class VdmnsCalendarPricesMonthShortcodeController extends VdmnsShortcodesControl
     public function render($data)
     {
         // TODO: Implement render() method.
-        var_dump($data);
+        var_dump('<pre>', $data, '</pre>');
+
     }
 
     public static function newInstance()
