@@ -1,9 +1,17 @@
 <?php
 namespace includes\controllers\admin\menu;
 
+use includes\common\VdmnsRequestApi;
+use includes\models\admin\menu\VdmnsMainAdminMenuModel;
+
 
 class VdmnsMainAdminMenuController extends VdmnsBaseAdminMenuController
 {
+    public $model;
+    public function __construct(){
+        parent::__construct();
+        $this->model = VdmnsMainAdminMenuModel::newInstance();
+    }
 
     public function action()
     {
@@ -36,9 +44,11 @@ class VdmnsMainAdminMenuController extends VdmnsBaseAdminMenuController
     public function render()
     {
         // TODO: Implement render() method.
-	_e("Hello world", VDMNS_PlUGIN_TEXTDOMAIN);
+	/*_e("Hello world", VDMNS_PlUGIN_TEXTDOMAIN);
 	$reuestAPI = VdmnsRequestApi::getInstance();
-    var_dump($reuestAPI->getCalendarPricesMonth('RUB', 'MOW', 'LED'));
+    var_dump($reuestAPI->getCalendarPricesMonth('RUB', 'MOW', 'LED'));*/
+	  $pathView = VDMNS_PlUGIN_DIR."/includes/views/admin/menu/VdmnsMainAdminMenu.view.php";
+        $this->loadView($pathView);
 
     }
 
