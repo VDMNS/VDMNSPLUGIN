@@ -2,7 +2,9 @@
 
  
 namespace includes\controllers\admin\menu;
-interface VdmnsIСreatorInstance
+/** @noinspection NonAsciiCharacters */
+/** @noinspection NonAsciiCharacters */
+interface VdmnsICreatorInstance
 {
     public static function newInstance();
 }
