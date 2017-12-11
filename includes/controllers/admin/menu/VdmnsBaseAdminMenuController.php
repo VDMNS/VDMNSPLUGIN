@@ -2,7 +2,7 @@
 namespace includes\controllers\admin\menu;
 
 
-abstract class VdmnsBaseAdminMenuController implements VdmnsIСreatorInstance
+abstract class VdmnsBaseAdminMenuController implements VdmnsICreatorInstance
 {
     public function __construct(){
         /*
@@ -14,7 +14,7 @@ abstract class VdmnsBaseAdminMenuController implements VdmnsIСreatorInstance
 
     abstract public function action();
     abstract public function render();
-    
+
 	 /**
      * Метод подключения view
      * @param $view
