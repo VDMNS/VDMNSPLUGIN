@@ -21,7 +21,7 @@ use includes\controllers\admin\menu\VdmnsMyToolsMenuController;
 use includes\controllers\admin\menu\VdmnsMyUsersMenuController;
 use includes\controllers\site\shortcodes\VdmnsCalendarPricesMonthShortcodeController;
 use includes\example\VdmnsExampleAction;
-use includes\example\VdmnsStepExampleFilter;
+use includes\example\VdmnsExampleFilter;
 
 class VdmnsLoader
 {
