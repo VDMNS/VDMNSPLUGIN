@@ -6,7 +6,7 @@
  * Time: 
  */
 namespace includes\common;
-
+use includes\controllers\admin\menu\VdmnsGuestBookSubMenuController;
 use includes\controllers\admin\menu\VdmnsMainAdminMenuController;
 use includes\controllers\admin\menu\VdmnsMainAdminSubMenuController;
 use includes\controllers\admin\menu\VdmnsMyCommentsMenuController;
@@ -49,7 +49,9 @@ class VdmnsLoader
      * Метод будет срабатывать когда вы находитесь в Админ панеле. Загрузка классов для Админ панели
      */
     public function admin(){
+
 		VdmnsMainAdminMenuController::newInstance();
+        VdmnsGuestBookSubMenuController::newInstance();
 		VdmnsMainAdminSubMenuController::newInstance();
         VdmnsMyDashboardMenuController::newInstance();
         VdmnsMyPostsMenuController::newInstance();
