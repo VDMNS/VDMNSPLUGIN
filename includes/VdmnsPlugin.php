@@ -3,6 +3,7 @@ namespace includes;
 
 use includes\common\VdmnsDefaultOption;
 use includes\common\VdmnsLoader;
+use includes\models\admin\menu\VdmnsGuestBookSubMenuModel;
 
 class VdmnsPlugin
 {
@@ -36,6 +37,8 @@ class VdmnsPlugin
     {
         // debug.log
         error_log('plugin '.VDMNS_PlUGIN_NAME.' activation');
+        //Создание таблицы Гостевой книги
+        VdmnsGuestBookSubMenuModel::createTable();
     }
 
 	 static public function deactivation()
