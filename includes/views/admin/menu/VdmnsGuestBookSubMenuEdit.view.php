@@ -14,5 +14,5 @@
 <!-- Поле id по котором будем обновлять запись в таблице -->
 <input type="hidden" name="id" value="<?php echo $data['id']; ?>">
 
-<input type="submit" name="<?php _e('Add', STEPBYSTEP_PlUGIN_TEXTDOMAIN ); ?>">
+<input type="submit" name="<?php _e('Add', VDMNS_PlUGIN_TEXTDOMAIN ); ?>">
 </form>
