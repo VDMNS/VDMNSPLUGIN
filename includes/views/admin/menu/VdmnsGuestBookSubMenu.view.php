@@ -1,4 +1,4 @@
-<?php
+
 /**
  * Created by PhpStorm.
  * User: User
@@ -8,7 +8,7 @@
 /*-- Ссылка ссылаеться на страницу гостевой книги только у нее добавлен $_GET['action'] параметр &action=add_data
     По этому параметру мы будем в методе render определять что делать
  */
-<a href="admin.php?page=vdmns_control_guest_book_menu&action=add_data">
+<a href ="admin.php?page=vdmns_control_guest_book_menu&action=add_data">
     <?php _e('Add', VDMNS_PlUGIN_TEXTDOMAIN ); ?>
 </a>
 
@@ -50,10 +50,10 @@
                      для редактирования &action=edit_data для удаления &action=delete_data и в этих ссылок еще добавлен
                      один $_GET['id'] параметр это &id=(id записи) записи гостевой книги по котором мы будем выполнять
                      действия -->
-                    <a href="admin.php?page=step_by_step_control_guest_book_menu&action=edit_data&id=<?php echo $value['id'];?>">
+                    <a href="admin.php?page=vdmns_control_guest_book_menu&action=edit_data&id=<?php echo $value['id'];?>">
                         <?php _e('Edit', VDMNS_PlUGIN_TEXTDOMAIN ); ?>
                     </a>
-                    <a href="admin.php?page=step_by_step_control_guest_book_menu&action=delete_data&id=<?php echo $value['id'];?>">
+                    <a href="admin.php?page=vdmns_control_guest_book_menu&action=delete_data&id=<?php echo $value['id'];?>">
                         <?php _e('Delete', VDMNS_PlUGIN_TEXTDOMAIN ); ?>
                     </a>
 
