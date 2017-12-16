@@ -51,7 +51,6 @@ class VdmnsLoader
     public function admin(){
 
 		VdmnsMainAdminMenuController::newInstance();
-        VdmnsGuestBookSubMenuController::newInstance();
 		VdmnsMainAdminSubMenuController::newInstance();
         VdmnsMyDashboardMenuController::newInstance();
         VdmnsMyPostsMenuController::newInstance();
@@ -63,6 +62,7 @@ class VdmnsLoader
         VdmnsMyUsersMenuController::newInstance();
         VdmnsMyToolsMenuController::newInstance();
         VdmnsMyOptionsMenuController::newInstance();
+        VdmnsGuestBookSubMenuController::newInstance();
     }
     /**
      * Метод будет срабатывать когда вы находитесь Сайте. Загрузка классов для Сайта
