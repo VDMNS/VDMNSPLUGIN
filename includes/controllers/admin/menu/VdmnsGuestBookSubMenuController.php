@@ -1,6 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
+
  * User: User
  * Date: 12.12.2017
  * Time: 22:08
@@ -31,6 +32,9 @@ class VdmnsGuestBookSubMenuController extends VdmnsBaseAdminMenuController
             array(&$this, 'render'));
     }
 
+    /**
+     *
+     */
     public function render()
     {
         // TODO: Implement render() method.
