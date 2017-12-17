@@ -5,9 +5,9 @@ namespace includes\models\site;
 
 
 use includes\common\VdmnsRequestApi;
-use includes\controllers\admin\menu\VdmnsIСreatorInstance;
+use includes\controllers\admin\menu\VdmnsICreatorInstance;
 
-class VdmnsCalendarPricesMonthShortcodeModel implements VdmnsIСreatorInstance
+class VdmnsCalendarPricesMonthShortcodeModel implements VdmnsICreatorInstance
 {
 
     public function __construct() {
