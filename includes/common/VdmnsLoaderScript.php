@@ -67,7 +67,7 @@ class VdmnsLoaderScript
 		
         ?>
             <script type="text/javascript">
-                var stepByStepAjaxUrl;
+                var vdmnsAjaxUrl;
                 vdmnsAjaxUrl  = '<?php echo VDMNS_PlUGIN_AJAX_URL; ?>';
             </script>
         <?php
