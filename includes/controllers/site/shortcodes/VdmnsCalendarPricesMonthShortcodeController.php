@@ -5,11 +5,11 @@ namespace includes\controllers\site\shortcodes;
 
 
 use includes\common\VdmnsRequestApi;
-use includes\controllers\admin\menu\VdmnsIСreatorInstance;
+use includes\controllers\admin\menu\VdmnsICreatorInstance;
 use includes\models\site\VdmnsCalendarPricesMonthShortcodeModel;
 
 class VdmnsCalendarPricesMonthShortcodeController extends VdmnsShortcodesController
-    implements VdmnsIСreatorInstance
+    implements VdmnsICreatorInstance
 {
  public $model;
     public function __construct() {
