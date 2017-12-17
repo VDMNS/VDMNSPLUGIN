@@ -1,4 +1,4 @@
-
+<?php
 /**
  * Created by PhpStorm.
  * User: User
@@ -8,6 +8,7 @@
 /*-- Ссылка ссылаеться на страницу гостевой книги только у нее добавлен $_GET['action'] параметр &action=add_data
     По этому параметру мы будем в методе render определять что делать
  */
+ ?>
 <a href="admin.php?page=vdmns_control_guest_book_menu&action=add_data">
     <?php _e('Add', VDMNS_PlUGIN_TEXTDOMAIN ); ?>
 </a>
