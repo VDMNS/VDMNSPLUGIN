@@ -37,7 +37,7 @@ class VdmnsGuestBookShortcodesController extends VdmnsShortcodesController
      * @param array $atts
      * @param string $content
      * @param string $tag
-     * @return mixed
+     * @return mixe
      */
     public function action($atts = array(), $content = '', $tag = '')
     {
