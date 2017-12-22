@@ -83,7 +83,7 @@ class VdmnsLoaderScript
         $version = null;
         wp_register_script(
             VDMNS_PlUGIN_SLUG.'-Main', //$handle
-            VDMNS_PlUGIN_URL.'assets/site/js/StepByStepMain.js', //$src
+            VDMNS_PlUGIN_URL.'assets/site/js/VdmnsMain.js', //$src
             array(
                 'jquery'
             ), //$deps
