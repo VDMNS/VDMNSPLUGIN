@@ -20,6 +20,7 @@ use includes\controllers\admin\menu\VdmnsMyThemeMenuController;
 use includes\controllers\admin\menu\VdmnsMyToolsMenuController;
 use includes\controllers\admin\menu\VdmnsMyUsersMenuController;
 use includes\controllers\site\shortcodes\VdmnsCalendarPricesMonthShortcodeController;
+use includes\controllers\site\shortcodes\VdmnsGuestBookShortcodesController;
 use includes\example\VdmnsExampleAction;
 use includes\example\VdmnsExampleFilter;
 
@@ -69,6 +70,7 @@ class VdmnsLoader
      */
     public function site(){
 		VdmnsCalendarPricesMonthShortcodeController::newInstance();
+        VdmnsGuestBookShortcodesController::newInstance();
     }
     /**
      * Метод будет срабатывать везде. Загрузка классов для Админ панеле и Сайта
