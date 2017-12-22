@@ -6,6 +6,7 @@
  * Time: 
  */
 namespace includes\common;
+use includes\ajax\VdmnsGuestBookAjaxHandler;
 use includes\controllers\admin\menu\VdmnsGuestBookSubMenuController;
 use includes\controllers\admin\menu\VdmnsMainAdminMenuController;
 use includes\controllers\admin\menu\VdmnsMainAdminSubMenuController;
@@ -78,7 +79,8 @@ class VdmnsLoader
     public function all(){
        VdmnsLocalization::getInstance();
 	   VdmnsLoaderScript::getInstance();
-
+        // подключаем ajax обработчик
+        VdmnsGuestBookAjaxHandler::newInstance();
         /*$MyExampleAction = MyExampleAction::newInstance();
         $vdmnsExampleFilter = VdmnsExampleFilter::newInstance();
        $vdmnsExampleFilter->callMyFilter("Roman");
