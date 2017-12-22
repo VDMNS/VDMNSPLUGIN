@@ -77,7 +77,28 @@ class VdmnsLoaderScript
 
 
 	
-    public function loadScriptSite($hook){}
+    public function loadScriptSite($hook){
+        //Подключение скриптов для frontend
+        //$version = VDMNS_PlUGIN_VERSION;
+        $version = null;
+        wp_register_script(
+            VDMNS_PlUGIN_SLUG.'-Main', //$handle
+            VDMNS_PlUGIN_URL.'assets/site/js/StepByStepMain.js', //$src
+            array(
+                'jquery'
+            ), //$deps
+            $version, //$ver
+            true //$$in_footer
+        );
+        /**
+         * Добавляет скрипт, только если он еще не был добавлен и другие скрипты от которых он зависит зарегистрированы.
+         * Зависимые скрипты добавляются автоматически.
+         */
+        wp_enqueue_script(VDMNS_PlUGIN_SLUG.'-Main');
+        // Добавим ajaxurl переменую до скрипта будем использовать функцию
+        // wp_add_inline_script( $handle, $data, $position );
+        $data = 'var ajaxurl = "'.VDMNS_PlUGIN_AJAX_URL.'";';
+        wp_add_inline_script( VDMNS_PlUGIN_SLUG.'-Main', $data, 'before' );}
     public function loadHeadScriptSite(){}
     public function loadFooterScriptSite(){}
 }
