@@ -56,9 +56,9 @@ class VdmnsGuestBookShortcodesController extends VdmnsShortcodesController
         $output = '';
         $output .= '<form  method="post">
                         <label>'.__('User name', VDMNS_PlUGIN_TEXTDOMAIN ).'</label>
-                        <input type="text" name="step_user_name" class="step-user-name">
+                        <input type="text" name="vdmns_user_name" class="vdmns-user-name">
                         <label>'.__('Message', VDMNS_PlUGIN_TEXTDOMAIN ).'</label>
-                        <textarea name="step_message" class="step-message"></textarea>
+                        <textarea name="vdmns_message" class="vdmns-message"></textarea>
                         <button class="vdmns-btn-add" >'.__('Add', VDMNS_PlUGIN_TEXTDOMAIN ).'</button>                   
                     </form>';
         return $output;
