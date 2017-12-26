@@ -24,6 +24,7 @@ use includes\controllers\site\shortcodes\VdmnsCalendarPricesMonthShortcodeContro
 use includes\controllers\site\shortcodes\VdmnsGuestBookShortcodesController;
 use includes\example\VdmnsExampleAction;
 use includes\example\VdmnsExampleFilter;
+use includes\widgets\VdmnsGuestBookDashboardWidget;
 
 class VdmnsLoader
 {
@@ -65,6 +66,7 @@ class VdmnsLoader
         VdmnsMyToolsMenuController::newInstance();
         VdmnsMyOptionsMenuController::newInstance();
         VdmnsGuestBookSubMenuController::newInstance();
+        VdmnsGuestBookDashboardWidget::newInstance();
     }
     /**
      * Метод будет срабатывать когда вы находитесь Сайте. Загрузка классов для Сайта
