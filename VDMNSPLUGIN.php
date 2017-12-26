@@ -12,5 +12,7 @@ Domain Path: /languages/
 require_once plugin_dir_path(__FILE__) . '/config-path.php';
 require_once VDMNS_PlUGIN_DIR.'/includes/common/VdmnsAutoload.php';
 require_once dirname(__FILE__).'/includes/VdmnsPlugin.php';
+add_action('widgets_init', create_function('', 'return register_widget("includes\widgets\VdmnsGuestBookWidget");'));
+
 register_activation_hook( __FILE__, array('includes\VdmnsPlugin' ,  'activation' ) );
 register_deactivation_hook( __FILE__, array('includes\VdmnsPlugin' ,  'deactivation' ) );
